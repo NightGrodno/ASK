@@ -31,6 +31,18 @@ plus:
 	add.s   $f3, $f1, $f2
 	j wynik
 	nop
+minus:
+	sub.s    $f3, $f1, $f2
+	j wynik
+	nop
+dziel:
+	div.s    $f3, $f1, $f2
+	j wynik
+	nop
+mnoz:
+	mul.s    $f3, $f1, $f2
+	j wynik
+	nop
 
 wynik:
 li $v0, 4
